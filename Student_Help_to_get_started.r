@@ -7,4 +7,4 @@ install.packages("shiny")
 library(shiny)
 
 #Run a shiny app:
-shiny::runGitHub('NE_ShinyApp_Logistic_Model', 'n_edgington')
+shiny::runGitHub("Synthetic_Biology","edgingtonn1", subdir="NE_ShinyApp_Logistic_Model/")
