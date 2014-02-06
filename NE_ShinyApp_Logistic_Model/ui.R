@@ -8,7 +8,7 @@ shinyUI(pageWithSidebar(
 
   # Sidebar with a slider input for number of observations
   sidebarPanel(
-	sliderInput("obs", "Number of observations:", min = 10, max = 50, value = 25),
+	sliderInput("obs", "Time steps:", min = 10, max = 50, value = 25),
       
 	sliderInput("R", "R (growth rate):", min=-3, max=3, value=0.5, step=0.05),
 

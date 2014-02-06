@@ -12,7 +12,7 @@ shinyServer(function(input, output) {
     logisticfxn <- function(xvar) {
     	(20*input$K)/(20+(input$K-20)*(exp(-(input$R)*xvar)))
     }
-    p <- ggplot(data.frame(x=seq(input$obs)), aes(x=x)) + stat_function(fun=logisticfxn)
+    p <- ggplot(data.frame(x=seq(input$obs)), aes(x=x)) + stat_function(fun=logisticfxn) + xlab("Time steps") + ylab("Transcriptional Output") + ggtitle("The Logistic Model")
 	print(p)  
   })
 })
